@@ -1,3 +1,7 @@
+<script>
+  import Tracking from 'venus-tracking'
+</script>
+
 <style>
 	h1, figure, p {
 		text-align: center;
@@ -36,9 +40,10 @@
 	<title>Sapper project template</title>
 </svelte:head>
 
+
 <h1>Jupiter</h1>
 <img src="/assets/mars.png" alt="Mars">
-<img src="/tracking/venus.png?tracking=on" alt="Venus">
+<Tracking/>
 
 
 <p><strong>Try editing this file (src/routes/index.svelte) to test live reloading.</strong></p>
