@@ -44,6 +44,3 @@
 <h1>Jupiter</h1>
 <img src="/assets/mars.png" alt="Mars">
 <Tracking/>
-
-
-<p><strong>Try editing this file (src/routes/index.svelte) to test live reloading.</strong></p>
