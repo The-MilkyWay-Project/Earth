@@ -1,5 +1,6 @@
 <script>
 	export let segment;
+	import { MyAwesomeComponent } from 'milkyway-mercury';
 </script>
 
 <style>
@@ -48,6 +49,7 @@
 	}
 </style>
 
+<MyAwesomeComponent name="world" />
 <nav>
 	<ul>
 		<li><a class='{segment === undefined ? "selected" : ""}' href='.'>home</a></li>
