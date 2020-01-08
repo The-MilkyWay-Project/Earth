@@ -1,17 +1,19 @@
-FROM node:10-alpine
+FROM mhart/alpine-node:12
 
-RUN mkdir -p /home/node/app/node_modules && chown -R node:node /home/node/app
+# install dependencies
+WORKDIR /app
+COPY package.json package-lock.json ./
+RUN npm ci --production
 
-WORKDIR /home/node/app
+###
+# Only copy over the Node pieces we need
+# ~> Saves 35MB
+###
+FROM mhart/alpine-node:slim-12
 
-COPY package*.json ./
+WORKDIR /app
+COPY --from=0 /app .
+COPY . .
 
-USER node
-
-RUN npm install
-
-COPY --chown=node:node . .
-
-EXPOSE 8080
-
-CMD [ "node", "app.js" ]
+EXPOSE 3000
+CMD ["node", "__sapper__/build"]
