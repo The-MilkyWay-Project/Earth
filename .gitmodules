@@ -1,0 +1,3 @@
+[submodule ".Earth-Container"]
+	path = .Earth-Container
+	url = git@github.com:JoshDanielWalker/.Earth-Container.git
