@@ -1,13 +1,11 @@
 # Earth Landing
 
-## .Container
-Docker
-
 ## .Infrastructure
-Terraform / Ansible
-
-## .Pipeline
-CI/CD
+### Ansible
+### Helm
+### Docker
+### Pipeline
+### Terraform
 
 ## App
 Project
