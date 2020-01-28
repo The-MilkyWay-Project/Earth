@@ -1,0 +1,13 @@
+#Development
+version: '3'
+services:
+    earth-development:
+        build:
+          context: .
+          dockerfile: .Infrastructure/Docker/Development/Dockerfile
+        ports:
+          - "3000:3000"
+        volumes:
+          - ./App:/app
+        command: npm install
+        command: npm run dev
