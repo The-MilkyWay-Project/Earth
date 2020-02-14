@@ -9,5 +9,4 @@ services:
           - "5000:5000"
         volumes:
           - ./App:/app
-        command: npm install
         command: npm run dev
