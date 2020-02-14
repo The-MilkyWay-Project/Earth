@@ -6,7 +6,7 @@ services:
           context: .
           dockerfile: .Infrastructure/Docker/Development/Dockerfile
         ports:
-          - "3000:3000"
+          - "5000:5000"
         volumes:
           - ./App:/app
         command: npm install
