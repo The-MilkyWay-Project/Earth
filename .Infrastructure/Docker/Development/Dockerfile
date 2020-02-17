@@ -1,14 +1,14 @@
-FROM mhart/alpine-node:12 as productiondependencies
+FROM mhart/alpine-node:12
 
 # install dependencies
 WORKDIR /app
 COPY package.json package-lock.json ./
 RUN npm install
 
-FROM mhart/alpine-node:12
+FROM mhart/alpine-node
+
 WORKDIR /app
-COPY --from=productiondependencies /app .
+COPY --from=0 /app .
 COPY . .
 
 EXPOSE 5000
-RUN npm run dev
