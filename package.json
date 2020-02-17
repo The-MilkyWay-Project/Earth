@@ -1,6 +1,6 @@
 {
-  "name": "sapper-tailwind-webpack",
-  "description": "sapper-tailwind-webpack",
+  "name": "earth",
+  "description": "earth",
   "version": "0.0.1",
   "scripts": {
     "dev": "sapper dev -p 5000",
