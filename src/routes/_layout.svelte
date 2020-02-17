@@ -1,8 +1,5 @@
 <script>
 
-	import Nav from '@joshdanielwalker/nav';
-
-	export let segment;
 </script>
 
 <style>
@@ -16,7 +13,6 @@
 	}
 </style>
 
-<Nav />
 
 <main>
 	<slot></slot>
