@@ -1,18 +1,11 @@
 <script>
-
+import Tailwindcss from 'tres-2b/src/index.js';
+import Nav from 'kepler-4b/src/index.js';
 </script>
 
-<style>
-	main {
-		position: relative;
-		max-width: 56em;
-		background-color: white;
-		padding: 2em;
-		margin: 0 auto;
-		box-sizing: border-box;
-	}
-</style>
+<Tailwindcss />
 
+<Nav />
 
 <main>
 	<slot></slot>
