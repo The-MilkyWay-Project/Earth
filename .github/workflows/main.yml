@@ -16,8 +16,10 @@ jobs:
       - name: Build and push Docker images
         uses: docker/build-push-action@v1.1.0
         with: 
-            repo-token: ${{ secrets.GITHUB_TOKEN }}
-            registry: docker.pkg.github.com/JoshDanielWalker/Earth/Earth
+            image: Earth/Earth
+            registry: docker.pkg.github.com
+            username: ${{ github.actor }}
+            password: ${{ secrets.GITHUB_TOKEN }} 
             repository: https://github.com/JoshDanielWalker/Earth
             dockerfile: Earth/.Infrastructure/Docker/Development/Dockerfile
             tag_with_ref: true
