@@ -23,4 +23,5 @@ jobs:
             password: ${{ secrets.GITHUB_TOKEN }} 
             repository: https://github.com/JoshDanielWalker/Earth
             dockerfile: .Infrastructure/Docker/Development/Dockerfile
+            tag_with_ref: true
             push: true
