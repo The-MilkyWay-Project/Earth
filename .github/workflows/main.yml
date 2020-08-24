@@ -2,7 +2,9 @@ name: Earth
 
 on:
   push:
-    branches: [ master ]
+    branches:    
+      - master
+      - 'releases/**'
     tags: "[0-9].[0-9].[0-9]"
 
 jobs:
@@ -22,4 +24,4 @@ jobs:
             repository: https://github.com/JoshDanielWalker/Earth
             dockerfile: Earth/.Infrastructure/Docker/Development/Dockerfile
             tag_with_ref: true
-            push: ${{ startsWith(github.ref, 'refs/tags/') }}
+            push: ${{ startsWith(github.ref, 'refs/tags/{git-tag}') }}
