@@ -24,4 +24,3 @@ jobs:
             repository: https://github.com/JoshDanielWalker/Earth
             dockerfile: Earth/.Infrastructure/Docker/Development/Dockerfile
             tag_with_ref: true
-            push: ${{ startsWith(github.ref, 'refs/tags/{git-tag}') }}
