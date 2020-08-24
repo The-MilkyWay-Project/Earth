@@ -22,4 +22,4 @@ jobs:
             username: ${{ github.actor }}
             password: ${{ secrets.GITHUB_TOKEN }} 
             repository: https://github.com/JoshDanielWalker/Earth
-            dockerfile: Earth/.Infrastructure/Docker/Development/Dockerfile
+            dockerfile: .Infrastructure/Docker/Development/Dockerfile
