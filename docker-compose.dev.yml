@@ -4,7 +4,7 @@ services:
     earth-development:
         build:
           context: .
-          dockerfile: .Infrastructure/Docker/Development/Dockerfile
+          dockerfile: Earth-Core/.Infrastructure/Docker/Development/Dockerfile
         ports:
           - "5000:5000"
         volumes:
