@@ -1,5 +1,5 @@
 .DS_Store
-.Infrastructure
+Earth-Core
 /node_modules/
 npm-debug.log
 Dockerfile
