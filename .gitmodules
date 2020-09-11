@@ -1,4 +1,0 @@
-[submodule "Earth-Core"]
-	path = Earth-Core
-	url = git@github.com:JoshDanielWalker/Earth-Core.git
-	branch = master
